@@ -1,86 +1,76 @@
+
 <!DOCTYPE html>
 <html lang="hi">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dev Kalot Thanagazi की आधिकारिक वेबसाइट - न्यूज़, ब्लॉग, वीडियो, सोशल मीडिया और अधिक।" />
   <title>Dev Kalot Thanagazi</title>
-  <meta name="description" content="Dev Kalot Thanagazi की आधिकारिक वेबसाइट - ब्लॉग, न्यूज़, वीडियो और संपर्क जानकारी।" />
   <style>
     body {
-      font-family: 'Arial', sans-serif;
-      background: linear-gradient(to right, #f5f7fa, #c3cfe2);
-      color: #222;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff;
+      color: #111;
       margin: 0;
       padding: 0;
     }
     header {
-      background-color: #003366;
-      color: white;
-      padding: 30px;
       text-align: center;
+      background-color: #222;
+      color: white;
+      padding: 20px;
+    }
+    header img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin-bottom: 10px;
     }
     nav {
-      background-color: #00509e;
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
+      flex-wrap: wrap;
+      background-color: #444;
     }
     nav a {
       color: white;
+      padding: 14px 20px;
       text-decoration: none;
-      padding: 15px 25px;
     }
     nav a:hover {
-      background-color: #003f7f;
+      background-color: #666;
     }
     .section {
-      padding: 40px 20px;
-      background-color: white;
-      margin: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
     }
-    h2 {
-      color: #003366;
+    .section h2 {
+      color: #0056b3;
     }
     .buttons a {
       display: inline-block;
-      margin: 10px;
-      padding: 12px 24px;
-      background-color: #28a745;
+      margin: 8px;
+      padding: 10px 16px;
+      background-color: #007BFF;
       color: white;
-      border-radius: 8px;
+      border-radius: 6px;
       text-decoration: none;
     }
-    iframe {
-      width: 100%;
-      max-width: 560px;
-      height: 315px;
-      display: block;
-      margin: 20px auto;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 12px;
-    }
-    .gallery img {
-      width: 160px;
-      border-radius: 10px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    .buttons a:hover {
+      background-color: #0056b3;
     }
     footer {
-      background-color: #222;
-      color: white;
       text-align: center;
-      padding: 20px;
+      background-color: #111;
+      color: white;
+      padding: 15px;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
 
   <header>
+    <img src="banner.jpg" alt="Dev Kalot Banner" />
     <h1>Dev Kalot Thanagazi</h1>
     <p>आधिकारिक वेबसाइट: ब्लॉग, न्यूज़ और सोशल मीडिया</p>
   </header>
@@ -88,49 +78,48 @@
   <nav>
     <a href="#blog">ब्लॉग</a>
     <a href="#news">न्यूज़</a>
-    <a href="#youtube">वीडियो</a>
+    <a href="#video">वीडियो</a>
     <a href="#gallery">गैलरी</a>
     <a href="#contact">संपर्क</a>
   </nav>
 
-  <div class="section" id="blog">
+  <section class="section" id="blog">
     <h2>📖 ब्लॉग</h2>
     <p>यहाँ जल्द ही ब्लॉग पोस्ट दिखाई जाएंगी।</p>
-  </div>
+  </section>
 
-  <div class="section" id="news">
+  <section class="section" id="news">
     <h2>📰 न्यूज़</h2>
-    <p>यहाँ थानागाज़ी से संबंधित ताज़ा समाचार आएंगे।</p>
-  </div>
+    <p>यहाँ थानागाज़ी से संबंधित ताज़ा समाचार आएंगे।</p>
+  </section>
 
-  <div class="section" id="youtube">
+  <section class="section" id="video">
     <h2>📺 यूट्यूब वीडियो</h2>
-    <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
     <div class="buttons">
-      <a href="https://youtube.com/@meenaji73?si=xnNEo7Q2VmtMAyN5" target="_blank">➡️ YouTube चैनल</a>
+      <a href="https://youtube.com/@meenaji73?si=xnNEo7Q2VmtMAyN5" target="_blank">🔗 YouTube चैनल</a>
     </div>
-  </div>
+  </section>
 
-  <div class="section" id="gallery">
+  <section class="section" id="gallery">
     <h2>🖼️ फोटो गैलरी</h2>
-    <div class="gallery">
-      <img src="https://via.placeholder.com/160x120?text=Image+1" alt="Gallery 1">
-      <img src="https://via.placeholder.com/160x120?text=Image+2" alt="Gallery 2">
-      <img src="https://via.placeholder.com/160x120?text=Image+3" alt="Gallery 3">
+    <div class="buttons">
+      <a href="#">Gallery 1</a>
+      <a href="#">Gallery 2</a>
+      <a href="#">Gallery 3</a>
     </div>
-  </div>
+  </section>
 
-  <div class="section" id="contact">
+  <section class="section" id="contact">
     <h2>📬 संपर्क करें</h2>
     <p>नीचे दिए गए सोशल मीडिया बटन से संपर्क करें:</p>
     <div class="buttons">
       <a href="https://www.instagram.com/devkalot2" target="_blank">📩 Instagram</a>
       <a href="https://www.facebook.com" target="_blank">📩 Facebook</a>
     </div>
-  </div>
+  </section>
 
   <footer>
-    <p>© 2025 Dev Kalot Thanagazi | सभी अधिकार सुरक्षित</p>
+    © 2025 Dev Kalot Thanagazi | सभी अधिकार सुरक्षित
   </footer>
 
 </body>
